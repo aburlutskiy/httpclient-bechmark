@@ -1,0 +1,41 @@
+[
+  {
+    "httpRequest": {
+      "path": "/benchmark/250ms"
+    },
+    "httpResponse": {
+      "statusCode": 200,
+      "body": "response",
+      "delay": {
+        "timeUnit": "MILLISECONDS",
+        "value": 250
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "path": "/benchmark/50ms"
+    },
+    "httpResponse": {
+      "statusCode": 200,
+      "body": "response",
+      "delay": {
+        "timeUnit": "MILLISECONDS",
+        "value": 50
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "path": "/benchmark/1ms"
+    },
+    "httpResponse": {
+      "statusCode": 200,
+      "body": "response",
+      "delay": {
+        "timeUnit": "MILLISECONDS",
+        "value": 1
+      }
+    }
+  }
+]

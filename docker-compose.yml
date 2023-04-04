@@ -1,0 +1,17 @@
+version: "2.2"
+services:
+
+  mockServer:
+    image: mockserver/mockserver:5.15.0
+    ports:
+      - 1080:1080
+    environment:
+      MOCKSERVER_PROPERTY_FILE: /mockserver/mockserver.properties
+      MOCKSERVER_INITIALIZATION_JSON_PATH: /mockserver/initializerJson.json
+    volumes:
+      - "./mockserver:/mockserver"
+    networks:
+      mockserver:
+
+networks:
+  mockserver:
